@@ -76,8 +76,7 @@ bool OYOrderArray::del(int index){
 }
 
 bool OYOrderArray::replace(int index, int num){
-    del(index);
-    add(num);
+    return del(index) && add(num);
     return true;
 }
 
